@@ -1,0 +1,25 @@
+%======================================================================
+%   Documentclass
+%======================================================================
+\documentclass[
+    13pt,           % Schriftgröße 13
+    twoside=false,  % Nur rechte Seiten drucken
+    bibtotoc,
+    idxtotoc,
+]{scrbook}
+
+%======================================================================
+%   Layout
+%======================================================================
+% Seitenlayout, A4 gefüllt
+\usepackage[a4paper,left=4.0cm, right=1.5cm, top=3.0cm, bottom=3.5cm]{geometry} 
+
+% Frontmatter should use roman numbering, which is continued in backmatter
+\usepackage[pagecontinue=true,alphMult=ab,AlphMulti=AB,fnsymbolmult=true,romanMult=true,RomanMulti=true]{pageslts}
+
+% Zeilenabstand 1.5
+\linespread{1.5}
+
+%======================================================================
+%   Einstellungen
+%======================================================================

@@ -1,0 +1,56 @@
+%======================================================================
+%	LaTeX Template fuer Abschlussarbeiten an der Handelshochschule Leipzig
+%
+%	basiert auf dem LaTeX Template der TU Chemnitz von Matthias Kupfer
+%
+%	erweitert und angepasst von Gerrit Beine
+%======================================================================
+
+%======================================================================
+%   includeonly     % include only these files
+%======================================================================
+\includeonly{
+    configuration,  % Document configuration / Dokumentkonfiguration
+    komaconfig,     % KOMA Script configuration / Konfiguration für KOMA Script
+    package,        % List of required packages / Benötigte Pakete
+    metadata,       % Document meta data / Dokumentinformationen
+    title,          % Title page & / Titelseite
+    content,        % Table of contents, lists of figures and tables / Inhalts-, Abbbildungs- und Tabellenverzeichnisse
+    foreword,       % Place for a foreword / Vorwort oder Einführung
+    document,       % The main document / Das eigentliche Dokument
+    bibliography,   % Bibliography / Literaturverzeichnis
+    index,          % Index
+    authorship      % Declaration of authorship / Selbständigkeitserklärung
+}
+
+\include{configuration}
+\include{package}
+\include{komaconfig}
+\include{metadata}
+
+%======================================================================
+%   Dokumentbeginn
+%======================================================================
+\begin{document}
+% This command is only a dummy, but unfortunately required for pageslts
+\pagenumbering{roman}
+
+\include{title}
+
+% Use roman page numbers for table of contents, foreword etc.
+\frontmatter
+\include{foreword}
+\include{content}
+
+% Use arabic page numbers for the main content
+\mainmatter
+\include{document}
+
+% Use roman page numbers for bibliography etc.
+\backmatter
+\pagenumbering{roman}
+\include{bibliography}
+\include{index}
+\include{authorship}
+
+\end{document}

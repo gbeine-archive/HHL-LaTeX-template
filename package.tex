@@ -1,0 +1,35 @@
+%======================================================================
+%   Used packages / Verwendete Pakete
+%======================================================================
+
+% Standard packages used
+\usepackage{
+  palatino,         % More beautiful fonts / Schönere Schrift
+  float,            % Positionierung von Gleitobjekten genau an der Stelle, wo man 'figure'- oder 'table'-Umgebung die Positionierung [H] gesetzt werden
+  makeidx,
+}
+
+\makeindex
+
+% KOMA Script packages used
+\usepackage{
+  scrpage2,         % Kopf- und Fußzeilen flexibel gestalten
+}
+
+% Debugging and layout preparation
+\usepackage{
+  layout,           %
+  blindtext         %
+}
+
+%======================================================================
+%   Own macros / Eigene Makros
+%======================================================================
+\usepackage{user}   %  Makros in user.sty
+
+%======================================================================
+%   hyperref should always be the last package to load
+%   it redefined commands of other packages
+%======================================================================
+\usepackage{hyperref}
+\usepackage{apacite} % APA 6 kompatible Bibliographie
