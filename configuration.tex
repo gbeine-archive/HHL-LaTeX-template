@@ -1,25 +1,27 @@
 %======================================================================
-%   Documentclass
+%   Documentclass - do not change
+%   Gerrit Beine <gerrit.beine@gmx.de>
 %======================================================================
 \documentclass[
-    13pt,           % Schriftgröße 13
-    twoside=false,  % Nur rechte Seiten drucken
-    bibtotoc,
-    idxtotoc,
+    13pt,           % Use 13 point font size / Schriftgröße 13
+    twoside=false,  % Left sides should be blank / Nur rechte Seiten drucken
+    bibtotoc,       % The bibliography should be visible in table of contents
+    idxtotoc,       % The index should be visible in table of contents
 ]{scrbook}
 
 %======================================================================
-%   Layout
+%   Layout - do not change
 %======================================================================
-% Seitenlayout, A4 gefüllt
-\usepackage[a4paper,left=4.0cm, right=1.5cm, top=3.0cm, bottom=3.5cm]{geometry} 
+% Use A4 page layout, Seitenlayout, A4 gefüllt
+\usepackage[a4paper, left=4.0cm, right=1.5cm, top=3.0cm, bottom=3.5cm]{geometry} 
 
 % Frontmatter should use roman numbering, which is continued in backmatter
+% This package is base for the roman numbering hack in main.tex
 \usepackage[pagecontinue=true,alphMult=ab,AlphMulti=AB,fnsymbolmult=true,romanMult=true,RomanMulti=true]{pageslts}
 
 % Zeilenabstand 1.5
 \linespread{1.5}
 
 %======================================================================
-%   Einstellungen
+%   Indivdual configuration here - Einstellungen ab hier
 %======================================================================

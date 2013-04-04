@@ -1,10 +1,23 @@
-% Kopfzeile, links, mitte, rechts
+%======================================================================
+%   KOMA script page layout - do not change
+%   Gerrit Beine <gerrit.beine@gmx.de>
+%======================================================================
+
+% Kopfzeile, links, mitte, rechts - nothing should be shown
+% Headline, left, center, right - es soll nichts angezeigt werden
 \ihead[]{}
 \chead[]{}
 \ohead[]{}
-% Fußzeile, links, mitte, rechts
+
+% Fußzeile, links, mitte, rechts - Seitennummern sollen rechts stehen
+% Footer, left, center, right - page numbers should be visible right
 \ifoot[]{}
 \cfoot[]{}
 \ofoot[\pagemark]{\pagemark}
 
+% Apply the page layout
 \pagestyle{scrheadings}
+
+%======================================================================
+%   Indivdual configuration here - Einstellungen ab hier
+%======================================================================

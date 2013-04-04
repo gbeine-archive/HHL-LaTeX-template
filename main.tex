@@ -1,10 +1,26 @@
 %======================================================================
-%	LaTeX Template fuer Abschlussarbeiten an der Handelshochschule Leipzig
+%   LaTeX Template fuer Abschlussarbeiten an der Handelshochschule Leipzig
+%   LaTeX template for thesis and seminar papers according to the
+%   Handelshochschule Leipzig's styleguide
 %
-%	basiert auf dem LaTeX Template der TU Chemnitz von Matthias Kupfer
+%   basiert auf dem LaTeX Template der TU Chemnitz von Matthias Kupfer
+%   based on the LaTeX Template of the Technical University Chemnitz,
+%   created by Matthias Kupfer
 %
-%	erweitert und angepasst von Gerrit Beine
+%   erweitert und angepasst von Gerrit Beine <gerrit.beine@gmx.de>
+%   extended and edited by Gerrit Beine <gerrit.beine@gmx.de>
 %======================================================================
+
+
+
+%======================================================================
+%
+%   Do not change this file!
+%   Use user.sty and configuration.tex for changes
+%
+%======================================================================
+
+
 
 %======================================================================
 %   includeonly     % include only these files
@@ -29,16 +45,19 @@
 \include{metadata}
 
 %======================================================================
-%   Dokumentbeginn
+%   Start of document
 %======================================================================
 \begin{document}
 % This command is only a dummy, but unfortunately required for pageslts
+% It is used to enable the roman numbering hack
 \pagenumbering{roman}
 
 \include{title}
 
 % Use roman page numbers for table of contents, foreword etc.
 \frontmatter
+
+% Render the foreword and the tables of contents
 \include{foreword}
 \include{content}
 

@@ -1,29 +1,55 @@
 %======================================================================
+%   Uses packages for standard layout - do not change
+%   Gerrit Beine <gerrit.beine@gmx.de>
+%======================================================================
+
+%======================================================================
+%
+%   Do not change this file!
+%   Use user.sty for including additional packages.
+%   Changing the order of the packages may lead to errors.
+%
+%======================================================================
+
+%======================================================================
 %   Used packages / Verwendete Pakete
 %======================================================================
 
 % Standard packages used
-\usepackage{
-  palatino,         % More beautiful fonts / Schönere Schrift
-  float,            % Positionierung von Gleitobjekten genau an der Stelle, wo man 'figure'- oder 'table'-Umgebung die Positionierung [H] gesetzt werden
-  makeidx,
-}
+\usepackage{palatino} % More beautiful fonts / Schönere Schrift
+\usepackage{float} % Position of floating areas like 'figure' and 'table'
+                   % is where [H] is set
+                   % Positionierung von Gleitobjekten genau an der Stelle
+                   % wo man 'figure'- oder 'table'-Umgebung die
+                   % Positionierung [H] gesetzt werden
+                   % See http://www.ctan.org/pkg/float
 
-% footmisc shall be used to create the full separator on the 2nd page of a footnote
-\usepackage[splitrule]{footmisc}
+\usepackage{makeidx} % Support for creating a document index
+                     % Unterstützung für einen automatisch erzeugten Index
+                     % See http://www.ctan.org/pkg/makeidx
 
-\makeindex
+\makeindex % Create the index / Erzeugung des Index
+
+\usepackage[splitrule]{footmisc} % footmisc shall be used to create the full
+                                 % separator on the 2nd page of a footnote
+                                 % Bei Fußnoten über zwei Seiten wird auf der
+                                 % zweiten Seite eine Linie über das ganze
+                                 % Blatt gezogen
+                                 % See http://www.ctan.org/pkg/footmisc
 
 % KOMA Script packages used
-\usepackage{
-  scrpage2,         % Kopf- und Fußzeilen flexibel gestalten
-}
+\usepackage{scrpage2} % Headline and footer are configurable, see komaconfig.tex
+                      % Kopf- und Fußzeilen flexibel gestalten, siehe komaconfig.tex
 
 % Debugging and layout preparation
-\usepackage{
-  layout,           %
-  blindtext         %
-}
+\usepackage{layout} % Use this package for debugging layout problems
+                    % Das Package erlaubt das Debuggen des Layouts
+                    % Command / Kommando \layout
+                    % See http://www.ctan.org/pkg/layout
+\usepackage{blindtext} % Use this package for generating filling text
+                       % Das Package generiert Fülltext
+                       % Command / Kommando \blindtext
+                       % See http://www.ctan.org/pkg/blindtext
 
 %======================================================================
 %   Own macros / Eigene Makros
@@ -34,5 +60,9 @@
 %   hyperref should always be the last package to load
 %   it redefined commands of other packages
 %======================================================================
-\usepackage{hyperref}
-\usepackage{apacite} % APA 6 kompatible Bibliographie
+\usepackage{hyperref} % Hyperref allows links in the document
+                      % Hyperref unterstütz Links im Dokument
+                      % See http://www.ctan.org/pkg/hyperref
+\usepackage{apacite} % APA 6 compatible bibliography style
+                     % APA 6 kompatible Bibliographie
+                     % See http://www.ctan.org/pkg/apacite
