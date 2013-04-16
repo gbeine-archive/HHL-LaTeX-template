@@ -22,6 +22,22 @@
 % Zeilenabstand 1.5
 \linespread{1.5}
 
+% Toggles for enabling / disabling parts of the document
+\usepackage{etoolbox}
+
+% Toggle for List of Tables
+\newtoggle{renderlot}
+\toggletrue{renderlot}
+
+% Toggle for List of Figures
+\newtoggle{renderlof}
+\toggletrue{renderlof}
+
+% Toggle for Index
+\newtoggle{renderidx}
+\toggletrue{renderidx}
+
 %======================================================================
 %   Indivdual configuration here - Einstellungen ab hier
 %======================================================================
+

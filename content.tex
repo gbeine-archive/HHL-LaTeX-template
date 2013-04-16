@@ -7,7 +7,11 @@
 \tableofcontents
 
 % Render list of figures - comment out if not required
-\listoffigures
+\iftoggle{renderlof}{%
+  \listoffigures
+}
 
 % Render list of tables - comment out if not required
-\listoftables
+\iftoggle{renderlot}{%
+  \listoftables
+}

@@ -9,4 +9,7 @@
 %   If there are not word to add to the index, nothing will happen :-)
 %
 %======================================================================
-\printindex
+\iftoggle{renderidx}{%
+  \printindex
+}
+
