@@ -37,6 +37,17 @@
                                  % Blatt gezogen
                                  % See http://www.ctan.org/pkg/footmisc
 
+\usepackage{caption} % controls placement of table captions
+\captionsetup{labelsep=space,justification=justified,singlelinecheck=off}
+
+% Allow width specification for table columns
+\usepackage{ragged2e}
+\usepackage{array}
+
+\usepackage[nottoc]{tocbibind} % controls toc generation
+
+\usepackage{graphicx}
+
 % KOMA Script packages used
 \usepackage{scrpage2} % Headline and footer are configurable, see komaconfig.tex
                       % Kopf- und Fußzeilen flexibel gestalten, siehe komaconfig.tex

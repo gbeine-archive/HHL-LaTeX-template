@@ -134,6 +134,7 @@ $(MAIN).pdf: $(MAIN).tex $(OBJECTS) hyperref.cfg
 	@echo 'PDF-LaTeX:  $(MAIN).tex'
 	@echo '---------------------------------------------------'
 	pdflatex $(MAIN).tex
+	pdflatex $(MAIN).tex
 
 #======================================================================
 #	nachfolgende Teile nur bei Verfuegbarkeit TODO
